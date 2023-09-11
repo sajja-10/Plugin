@@ -1,0 +1,10 @@
+{
+	"id": "Sajja",
+	"name": "Sajja",
+	"version": "1.4.5",
+	"minAppVersion": "0.15.0",
+	"description": "This is an obsidian plugin for my personal use.",
+	"author": "Sajja Regmi",
+	"authorUrl": "https://github.com/sajja-10",
+	"isDesktopOnly": false
+}
