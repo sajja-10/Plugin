@@ -12,14 +12,12 @@ export interface MyPluginSettings {
 	mySetting: string;
 	pomodoroInterval: number;
     pomo: number;
-	notificationSound: boolean;
 }
 
 export const DEFAULT_SETTINGS: MyPluginSettings = {
 	mySetting: 'default',
 	pomodoroInterval: 1,
     pomo: 5,
-	notificationSound:true,
 
 }
 
