@@ -52,7 +52,6 @@ export class Timer {
 
 
 	/*Set status bar to remaining time or empty string if no timer is running*/
-	//handling switching logic here, should spin out
 	async setStatusBarText(): Promise<string> {
 		if (this.mode !== Mode.NoTimer) {
 		  let timer_type_symbol = "";
@@ -145,7 +144,7 @@ export class Timer {
 
 	/*Return milliseconds left until end of timer*/
 	getCountdown(): number {
-		let endTimeClone = this.endTime.clone(); //rewrite with freeze?
+		let endTimeClone = this.endTime.clone(); 
 		return endTimeClone.diff(moment());
 	}
 
@@ -164,7 +163,7 @@ export class Timer {
 
 
 	/**************  Notifications  **************/
-	/*Sends notification corresponding to whatever the mode is at the moment it's called*/
+	/*Sends notification corresponding to whatever the mode is at the moment*/
 	modeStartingNotification(): void {
 		let time = this.getTotalModeMillisecs();
 		let unit: string;
@@ -214,9 +213,6 @@ function millisecsToString(millisecs: number): string {
 
 	return formattedCountDown.toString();
 }
-
-
-
 
 
 
