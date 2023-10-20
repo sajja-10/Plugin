@@ -1,5 +1,4 @@
 import { Notice, moment, TFolder, TFile } from 'obsidian';
-import { notificationUrl } from './audio_urls';
 import { MyPluginSettings } from '../main';
 import MyPlugin from '../main';
 
@@ -79,9 +78,6 @@ export class Timer {
 			new Notice("Timer stopped.")
 			}
 		
-		if (this.settings.notificationSound === true) { //play sound end of timer
-			playNotification();
-		}
 		
 
 		}
@@ -219,10 +215,7 @@ function millisecsToString(millisecs: number): string {
 	return formattedCountDown.toString();
 }
 
-function playNotification(): void {
-	const audio = new Audio(notificationUrl);
-	audio.play();
-}
+
 
 
 
