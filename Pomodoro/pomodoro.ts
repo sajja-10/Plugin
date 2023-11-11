@@ -9,7 +9,6 @@ function setStatusBarText(title: string, content: string): void {
     const notificationContent = document.createElement('div');
     notificationContent.innerHTML = content;
 
-    
 }
 
 export const enum Mode {
@@ -76,7 +75,6 @@ export class Timer {
 			this.quitTimer();
 			new Notice("Timer stopped.")
 			}
-		
 		
 
 		}
